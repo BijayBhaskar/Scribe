@@ -1,0 +1,9 @@
+<li class="list-group-item">
+    <div [ngClass]="{
+        'text-primary':person.Country =='IND',
+        'text-danger':person.Country =='US',
+        'text-success':person.Country =='UK',
+        'text-warning':person.Country =='AUS'
+    }" [ngStyle]="{'font-size':getTextSize(person)}"> {{person.Name}} - {{person.Country}}
+    </div>
+</li>
